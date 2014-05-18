@@ -1,0 +1,150 @@
+/*
+ * Eat Dots - index.css
+ * Copyright (C) 2014 Callisto Game Studios. All rights reserved.
+ */
+ 
+body {
+	font-family:sans-serif;
+}
+
+div#game-container {
+	width:940px;
+	height:640px;
+	border: 1px solid black;
+	position:absolute;
+	left:50px;
+}
+
+div.controller {
+	height:100%;
+	width:100%;
+	position:absolute;
+	display:none;
+	left:0;
+	top:0;
+}
+
+canvas {
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+span#score {
+	position:absolute;
+	left:100px;
+	bottom:10px;
+	font-size:25px;
+}
+
+span#timer {
+	position:absolute;
+	right:10px;
+	bottom: 10px;
+	font-size:25px;
+}
+
+/* Game Over */
+div#high-score {
+	background:black;
+	color:white;
+	font-size: 25px;
+}
+
+div#high-score div {
+	float:left;
+	height:640px;
+}
+
+div#high-score p {
+	margin:0 0 0 0;
+}
+
+div#high-score h1 {
+	margin-top:175px;
+	font-weight:normal;
+	font-size:2.5em;
+}
+
+div#score-container, div#hiscore-container {
+	width: 200px;
+	padding: 150px 0 0 60px;
+}
+
+ul {
+	list-style-type:none;
+}
+
+div#gameover-menu ul li span {
+	cursor:pointer;
+	padding:2px 2px 2px 2px;
+	margin: 2px 0 2px 0;
+}
+
+div#gameover-menu ul li span:hover {
+	border:2px solid white;
+}
+
+span#final, span#high {
+	font-size:75px;
+	margin-left:20px;
+}
+
+img#menu-red, img#menu-green {
+	position:absolute;
+	height:24px;
+	width:24px;
+}
+
+img#menu-square {
+	position:absolute;
+	height:40px;
+	width:40px;
+	animation: slide 5s linear 0 infinite alternate;
+	-webkit-animation: slide 5s linear 0 infinite alternate;
+}
+
+@keyframes slide {
+	from {left:0;}
+	to {left:900px;}
+}
+
+@-webkit-keyframes slide {
+	from {left:0;}
+	to {left:900px;}
+}
+
+div#menu-text-container {
+	text-align:center;
+	font-size:25px;
+	margin-top:150px;
+}
+
+div#menu-text-container h1 {
+	font-size:100px;
+	margin-bottom:0.5em;
+}
+
+div#menu-text-container ul li span {
+	cursor:pointer;
+}
+
+div#menu-text-container ul li span:hover {
+	color: blue;
+	font-weight:bold;
+}
+
+div#sidebar {
+	position:absolute;
+	width:300px;
+	right:15px;
+}
+
+div#social {
+	padding: 10px 10px 10px 10px;
+	border: 1px solid black;
+}
+
+div#social div {
+	float:left;
+}
