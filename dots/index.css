@@ -137,7 +137,7 @@ div#menu-text-container ul li span:hover {
 div#sidebar {
 	position:absolute;
 	width:300px;
-	right:15px;
+	left:150px;
 }
 
 div#social {
@@ -148,15 +148,14 @@ div#social {
 
 div#social div {
 	float:left;
-<<<<<<< HEAD
-}
+	margin:0 5px 0 5px;
 
 footer {
 	width: 940px;
 	position:absolute;
 	left:60px;
 	top:660px;
-=======
 	margin:0 5px 0 5px;
 }
->>>>>>> 9d4f757daee4bad9adec8261543adae033b2b5da
+/* >>>>>>> 9d4f757daee4bad9adec8261543adae033b2b5da
+ */
