@@ -148,3 +148,9 @@ div#social {
 div#social div {
 	float:left;
 }
+
+footer {
+	width: 940px;
+	position:absolute;
+	left:60px;
+	top:660px;
