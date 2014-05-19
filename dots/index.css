@@ -12,7 +12,7 @@ div#game-container {
 	height:640px;
 	border: 1px solid black;
 	position:absolute;
-	left:10px;
+	left:30px;
 }
 
 div.controller {
@@ -137,7 +137,7 @@ div#menu-text-container ul li span:hover {
 div#sidebar {
 	position:absolute;
 	width:300px;
-	left:1090px;
+	left:1000px;
 }
 
 div#social {
