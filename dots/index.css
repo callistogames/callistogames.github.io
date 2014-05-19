@@ -143,10 +143,12 @@ div#sidebar {
 div#social {
 	padding: 10px 10px 10px 10px;
 	border: 1px solid black;
+	height:50px;
 }
 
 div#social div {
 	float:left;
+<<<<<<< HEAD
 }
 
 footer {
@@ -154,3 +156,7 @@ footer {
 	position:absolute;
 	left:60px;
 	top:660px;
+=======
+	margin:0 5px 0 5px;
+}
+>>>>>>> 9d4f757daee4bad9adec8261543adae033b2b5da
