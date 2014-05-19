@@ -135,7 +135,7 @@ div#menu-text-container ul li span:hover {
 }
 
 div#sidebar {
-	position:absolute;
+	position:relative;
 	width:300px;
 	left:150px;
 }
