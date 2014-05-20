@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!--
+ - Eat Dots - index.html
+ - Copyright (C) 2014 Callisto Game Studios. All rights reserved.
+ -->
+
+<html>
+
+<head>
+	<title>Eat Dots</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="description" content="Eat the green dots to stay alive, but look out for the red ones!" />
+	<div id="fb-root"></div>
+
+	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="game.js"></script>
+	<script type="text/javascript" src="social.js"></script>
+	<script src="http://connect.facebook.net/en_US/sdk.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function () {
+			FB.init({
+			  appId: 704173726287751,
+			  frictionlessRequests: true,
+			  status: true,
+			  version: 'v2.0'
+			});
+
+			//FB.Event.subscribe('auth.authResponseChange', onAuthResponseChange);
+			//FB.Event.subscribe('auth.statusChange', onStatusChange);
+			
+			gameInit();
+		});
+	</script>
+	
+</head>
+
+<body>
+	<div id="game-container">
+		<div id="game" class="controller">
+			<canvas id="game-canvas" width=940 height=640></canvas>
+			<span style="font-weight:bold;font-size:22px;position:absolute;left:10px;bottom:12px">Score:</span><span id="score"></span>
+			<span id="timer"></span>
+		</div>
+		
+		<div id="menu" class="controller">
+			<img src="images/green-dot.png" id="menu-green">
+			<img src="images/enemy-blob.png" id="menu-red">
+			<img src="images/wamba.png" id="menu-square">
+			<div id="menu-text-container">
+				<h1>Eat Dots</h1>
+				<ul>
+					<li><span id="play" onclick="menuc.deactivate();startGame();">Play Game</span></li>
+					<li><span id="learn" onclick="menuc.deactivate();howtoc.activate();">How to Play</span></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="high-score" class="controller">
+			<div id="score-container">
+				<p>Your Score</p>
+				<span id="final">0</span>
+			</div>
+			<div id="hiscore-container">
+				<p>High Score</p>
+				<span id="high">0</span>
+			</div>
+			<div id="gameover-menu">
+				<h1>GAME OVER</h1>
+				<ul>
+					<li><span id="again" onclick="hiscorec.deactivate();startGame();">Play Again</span></li>
+					<li><span id="return" onclick="hiscorec.deactivate();returnToMenu();">Main Menu</span></li>
+				</ul>
+			</div>
+		</div>
+		<div id="howto" class="controller">
+			<img src="images/howto.png" style="height:100%;width:100%;" onclick="howtoc.deactivate();returnToMenu();">
+		</div>
+	</div>
+</body>
+
+</html>
