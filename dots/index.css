@@ -3,6 +3,12 @@
  * Copyright (C) 2014 Callisto Game Studios. All rights reserved.
  */
  
+
+@font-face {
+	font-family: Chalkduster;
+	src: url("fonts/Chalkduster.ttf");
+}
+ 
 body {
 	font-family:sans-serif;
 }
@@ -118,6 +124,7 @@ div#menu-text-container {
 	text-align:center;
 	font-size:25px;
 	margin-top:150px;
+	font-family:Chalkduster;
 }
 
 div#menu-text-container h1 {
