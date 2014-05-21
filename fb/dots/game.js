@@ -54,7 +54,7 @@ function Game () {
 		Math.abs(this.green.pos.y-this.square.pos.y) < this.square.radius) {
 			this.score += 1;
 			this.startTime = (new Date()).getTime();
-			this.square.radius += 4;
+			this.square.radius += gamec.width*0.00426;
 			if (this.square.radius > 0.225*gamec.width) {
 				this.square.radius = 15;
 				this.square.level += 1;
@@ -134,14 +134,14 @@ function gameInit () {
 		$("#menu-square").css("left", "0px");
 		this.interval = setInterval(function () {
 			$("#menu-green").css({
-				"top": Math.random()*600+"px",
-				"left": Math.random()*900+"px"
+				"top": Math.random()*480+"px",
+				"left": Math.random()*720+"px"
 			});
 			$("#menu-red").css({
-				"top": Math.random()*600+"px",
-				"left": Math.random()*900+"px"
+				"top": Math.random()*480+"px",
+				"left": Math.random()*720+"px"
 			});
-			$("#menu-square").css("top", Math.random()*600+"px");
+			$("#menu-square").css("top", Math.random()*480+"px");
 		}, 5000);
 	}
 	

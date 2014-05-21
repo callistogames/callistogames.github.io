@@ -10,12 +10,12 @@
 
 body {
 	font-family:sans-serif;
-	width:940px;
+	width:520px;
 }
 
 div#game-container {
-	width:940px;
-	height:640px;
+	width:760px;
+	height:520px;
 	position:absolute;
 }
 
@@ -71,8 +71,8 @@ div#high-score h1 {
 }
 
 div#score-container, div#hiscore-container {
-	width: 200px;
-	padding: 150px 0 0 60px;
+	width: 150px;
+	padding: 150px 0 0 30px;
 }
 
 ul {
@@ -110,12 +110,12 @@ img#menu-square {
 
 @keyframes slide {
 	from {left:0;}
-	to {left:900px;}
+	to {left:720px;}
 }
 
 @-webkit-keyframes slide {
 	from {left:0;}
-	to {left:900px;}
+	to {left:720px;}
 }
 
 div#menu-text-container {
