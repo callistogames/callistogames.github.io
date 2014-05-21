@@ -30,6 +30,10 @@ div.controller {
 	top:0;
 }
 
+div#game {
+	font-family:Chalkduster;
+}
+
 canvas {
 	position:absolute;
 	left:0;
