@@ -110,7 +110,7 @@
 				opts.author = $(posts[i]).find("author").text();
 				opts.date = new Date(eval($(posts[i]).attr("date")+"*10000"));
 				opts.postId = $(posts[i]).attr("id");
-				postUrl = $(posts[i]).attr("src");
+				var postUrl = $(posts[i]).attr("src");
 				bl.post(postUrl, container, opts);
 			}
 		});
