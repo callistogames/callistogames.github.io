@@ -1,12 +1,12 @@
 {
-	dateFormat: "dmy",
-	timeFormat: "24",
-	timeZone: {
-		name: "PDT",
-		offset: -420
+	"dateFormat": "dmy",
+	"timeFormat": "24",
+	"timeZone": {
+		"name": "PDT",
+		"offset": -420
 	},
 	/* timeZone: "local" */
-	months: [
+	"months": [
 		"January",
 		"February",
 		"March",
@@ -20,7 +20,7 @@
 		"November",
 		"December"
 	],
-	days: [		/* Sunday first */
+	"days": [	/* Sunday first */
 		"Sunday",
 		"Monday",
 		"Tuesday",
@@ -29,8 +29,8 @@
 		"Friday",
 		"Saturday"
 	],
-	locale: "us",
-	units: "metric",
-	lang: "en-gb",
-	meta: true
+	"locale": "us",
+	"units": "metric",
+	"lang": "en-gb",
+	"meta": "true"
 }
