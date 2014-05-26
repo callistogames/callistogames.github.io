@@ -102,10 +102,10 @@
 	
 	bl.postList = function (url, container) {
 		$.get(dir+url, function (raw) {
-			list = $.parseXML(raw);
-			posts = $(list).find("post");
+			var list = $.parseXML(raw);
+			var posts = $(list).find("post");
 			for (i=0;i<posts.length;i++) {
-				opts = new Object();
+				var opts = new Object();
 				opts.tags = $(posts[i]).find("tag");
 				opts.author = $(posts[i]).find("author").text();
 				opts.date = new Date(eval($(posts[i]).attr("date")+"*10000"));
