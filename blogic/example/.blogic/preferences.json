@@ -5,7 +5,6 @@
 		"name": "PDT",
 		"offset": -420
 	},
-	/* timeZone: "local" */
 	"months": [
 		"January",
 		"February",
@@ -20,7 +19,7 @@
 		"November",
 		"December"
 	],
-	"days": [	/* Sunday first */
+	"days": [
 		"Sunday",
 		"Monday",
 		"Tuesday",
