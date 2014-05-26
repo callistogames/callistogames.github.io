@@ -1,0 +1,19 @@
+<html>
+
+<head>
+	<script type="text/javascript" src="json.js"></script>
+	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../blogic.js"></script>
+</head>
+
+<body>
+	<div id="-b-blog-container">
+		<script type="text/javascript">
+			$(function () {
+				_b.postList("/.blogic/posts.xml", $("#-b-blog-container"));
+			});
+		</script>
+	</div>
+</body>
+
+</html>
