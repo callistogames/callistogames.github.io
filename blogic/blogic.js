@@ -48,9 +48,10 @@
 	var bl = new Object();
 	
 	// Load the preferences file.
-	$.get(dir + "/.blogic/preferences.json", function (content) {
-		bl.prefs = JSON.parse(content);
-	});
+	r = new XMLHttpRequest();
+	r.open("GET", dir+"/.blogic/preferences.json", false);
+	r.send();
+	JSON.parse(r.responseText);
 	
 	// Basic function: post.
 	bl.post = function (url, container, options) {
