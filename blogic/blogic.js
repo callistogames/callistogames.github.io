@@ -101,9 +101,9 @@
 	}
 	
 	bl.postList = function (url, container) {
-		$.get(dir+url, function (raw) {
-			var list = $.parseXML(raw);
-			var posts = $(list).find("post");
+		$.get(dir+url, function (list) {
+			//var list = $.parseXML(raw);
+			var posts = $("post", list);
 			for (i=0;i<posts.length;i++) {
 				var opts = new Object();
 				opts.tags = $(posts[i]).find("tag");
