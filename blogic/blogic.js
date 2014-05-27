@@ -55,6 +55,7 @@
 
 	// Basic function: post.
 	bl.post = function (url, container, options) {
+		var date;
 		if (bl.prefs.timeZone == "local") {
 			date = new Date(options.date.UTC()+(new Date(0)).setUTCMinutes(-(new Date()).getTimeZoneOffset()));
 		} else {
