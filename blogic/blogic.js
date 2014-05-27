@@ -112,7 +112,7 @@
 				var opts = new Object();
 				opts.tags = $(posts[i]).find("tag");
 				opts.author = $(posts[i]).find("author").text();
-				opts.date = new Date(eval($(posts[i]).attr("date")+"*10000"));
+				opts.date = new Date(eval($(posts[i]).attr("date"))*10000);
 				opts.postId = $(posts[i]).attr("id");
 				var postUrl = $(posts[i]).attr("src");
 				bl.post(dir+postUrl, container, opts);
