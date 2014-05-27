@@ -56,12 +56,12 @@
 	// Basic function: post.
 	bl.post = function (url, container, options) {
 		console.log(arguments);
-		var date;
-		if (bl.prefs.timeZone == "local") {
+		var date = options.date;
+		/*if (bl.prefs.timeZone == "local") {
 			date = new Date(options.date.getTime()+(new Date(0)).setUTCMinutes(-(new Date()).getTimezoneOffset()).getTime());
 		} else {
 			date = new Date(options.date.getTime()+(new Date(0)).setUTCMinutes(bl.prefs.timeZone.offset).getTime());
-		}
+		}*/
 		switch (bl.prefs.dateFormat) {
 			case "dmy":
 				dateString = bl.prefs.days[date.getUTCDay()] + date.getUTCDate() + bl.prefs.months[date.getUTCMonth()] + date.getUTCFullYear();
