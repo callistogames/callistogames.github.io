@@ -74,7 +74,7 @@
 		}
 		switch (bl.prefs.timeFormat) {
 			case "24":
-				timeString = date.getUTCHours() + ':' + date.getUTCMinutes() + bl.prefs.timeZone.name;
+				timeString = date.getUTCHours() + ':' + date.getUTCMinutes() +' '+ bl.prefs.timeZone.name;
 				break;
       default:
 				timeString = "";
