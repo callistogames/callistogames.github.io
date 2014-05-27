@@ -91,7 +91,7 @@
 					'<p class="-b-post-date"><span>Posted on </span></p></header>'
 				);
 				$(".-b-post-author", $post).append(options.author);
-				$(".-b-post-date", $post).append(dateString + timeString);
+				$(".-b-post-date", $post).append(dateString +' '+ timeString);
 				$(".-b-post-content", $post).after(
 					'<footer class="-b-post-tags"><span>Tags: </span></footer>'
 				);
