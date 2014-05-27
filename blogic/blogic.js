@@ -84,7 +84,7 @@
 			$post = $('<div class="-b-post"></div>');
 			raw = $.parseHTML(content);
 			$post.append(raw);
-			$('<a href="'+dir+'/posts?id='+options.postId+'></a>').wrapInner(".-b-post-title", $post);
+			$(".-b-post-title", $post).wrap('<a href="'+dir+'/posts?id='+options.postId+'></a>');
 			if (bl.prefs.meta) {
 				$(".-b-post-title", $post).after(
 					'<header class="-b-post-header">'+
