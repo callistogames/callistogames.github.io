@@ -29,7 +29,7 @@
  * WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
  
-(function (global, dir) {
+(function (dir) {
 
 	// Check for jQuery; if it is not present, fetch and add it.
 	if (!jQuery) {
@@ -118,7 +118,7 @@
 	}
 	
 	// Add the library and an alias to the window object.
-	global.blog = bl;
-	global._b = bl;
+	window.blog = bl;
+	window._b = bl;
 	
-})(window, '.');
+})('.');
