@@ -58,9 +58,9 @@
 		console.log(arguments);
 		var date;
 		if (bl.prefs.timeZone == "local") {
-			date = new Date(options.date.UTC()+(new Date(0)).setUTCMinutes(-(new Date()).getTimeZoneOffset()));
+			date = new Date(options.date.getTime()+(new Date(0)).setUTCMinutes(-(new Date()).getTimeZoneOffset()).getTime());
 		} else {
-			date = new Date(options.date.UTC()+(new Date(0)).setUTCMinutes(bl.prefs.timeZone.offset).UTC());
+			date = new Date(options.date.getTime()+(new Date(0)).setUTCMinutes(bl.prefs.timeZone.offset).getTime());
 		}
 		switch (bl.prefs.dateFormat) {
 			case "dmy":
