@@ -64,10 +64,10 @@
 		}*/
 		switch (bl.prefs.dateFormat) {
 			case "dmy":
-				dateString = bl.prefs.days[date.getUTCDay()] + date.getUTCDate() + bl.prefs.months[date.getUTCMonth()] + date.getUTCFullYear();
+				dateString = bl.prefs.days[date.getUTCDay()] +', '+ date.getUTCDate() +' '+ bl.prefs.months[date.getUTCMonth()] +' '+ date.getUTCFullYear();
 				break;
       case "mdy":
-        dateString = bl.prefs.days[date.getUTCDay()] + bl.prefs.months[date.getUTCMonth()] + date.getUTCDate() + date.getUTCFullYear();
+        dateString = bl.prefs.days[date.getUTCDay()] +', '+ bl.prefs.months[date.getUTCMonth()] +' '+ date.getUTCDate() +', '+ date.getUTCFullYear();
 				break;
       default:
 				dateString = date.toISOString();
