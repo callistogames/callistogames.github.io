@@ -4,11 +4,7 @@
  */
  
 
-@font-face {
-	font-family: Chalkduster;
-	src: local("#"),
-		url("/fonts/Chalkduster.ttf") format("truetype")
-}
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
  
 body {
 	font-family:sans-serif;
@@ -32,7 +28,7 @@ div.controller {
 }
 
 div#game {
-	font-family:Chalkduster;
+	font-family:"Indie Flower";
 }
 
 canvas {
@@ -129,7 +125,7 @@ div#menu-text-container {
 	text-align:center;
 	font-size:25px;
 	margin-top:150px;
-	font-family:Chalkduster;
+	font-family:"Indie Flower";
 }
 
 div#menu-text-container h1 {
