@@ -6,7 +6,8 @@
 
 @font-face {
 	font-family: Chalkduster;
-	src: url(http://callistogames.github.io/fonts/Chalkduster.ttf);
+	src: local("#"),
+		url("/fonts/Chalkduster.ttf") format("truetype")
 }
  
 body {
