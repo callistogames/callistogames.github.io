@@ -13,14 +13,16 @@
 	<meta name="description" content="Eat the green dots to stay alive, but look out for the red ones!" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<div id="fb-root"></div>
+	
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=704173726287751&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-	<script type="text/javascript">
+
+<script type="text/javascript">
   (function() {
     var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true;
     li.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//platform.stumbleupon.com/1/widgets.js';
@@ -78,6 +80,7 @@
 				<ul>
 					<li><span id="again" onclick="hiscorec.deactivate();startGame();">Play Again</span></li>
 					<li><span id="return" onclick="hiscorec.deactivate();returnToMenu();">Main Menu</span></li>
+					<li><div class="fb-share-button" data-href="http://callistogames.github.io/dots" data-type="button"></div></li>
 				</ul>
 			</div>
 		</div>
@@ -94,11 +97,11 @@
 		<p><small>Copyright &copy; 2014 Callisto Game Studios</small></p>
 	</footer>
 	<div id="sidebar">
-		<div id="social" style="margin-top:50px;">
+		<!--div id="social" style="margin-top:50px;">
 			<p style="font-weight:bold;margin:0 0 0 10px;">Share:</p><br>
 			<div><div class="fb-share-button" data-href="http://callistogames.github.io/dots" data-type="box_count"></div></div>
 			<div><su:badge layout="6"></su:badge></div>
-		</div>
+		</div-->
 	</div>
 </body>
 
