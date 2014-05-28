@@ -89,7 +89,7 @@ div#gameover-menu ul li span {
 	margin: 2px 0 2px 0;
 }
 
-div#gameover-menu ul li span:hover {
+div#gameover-menu ul li span.not-fb:hover {
 	border:2px solid white;
 }
 
