@@ -29,6 +29,7 @@ div.controller {
 
 div#game {
 	font-family:"Indie Flower";
+	font-weight:bold;
 }
 
 canvas {
@@ -126,6 +127,7 @@ div#menu-text-container {
 	font-size:25px;
 	margin-top:150px;
 	font-family:"Indie Flower";
+	font-weight:bold;
 }
 
 div#menu-text-container h1 {
