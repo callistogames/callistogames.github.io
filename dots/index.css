@@ -150,15 +150,14 @@ div#sidebar {
 	left:1000px;
 }
 
-div#social {
-	padding: 10px 10px 10px 10px;
-	border: 1px solid black;
-	height:100px;
+div#app-stores {
+	padding: 10px 0 10px 0;
+	margin-top:100px;
 }
 
-div#social div {
+div#app-stores img {
 	float:left;
-	margin:0 5px 0 5px;
+	margin:0 25px 0 25px;
 }
 
 footer {
